@@ -1,0 +1,274 @@
+body {
+    font-family: 'Noto Serif', serif;
+}
+
+.header {
+    background-color: #A6D0DD;    
+}
+
+.header #logo {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header a {
+    text-decoration: none;
+    color: #171e20;
+    font-weight: 500;
+    font-size: 52px;
+    margin: 0;
+    padding: 0;
+}
+
+.used {
+    display: flex;
+    justify-content: flex-end;    
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    
+}
+.intro {
+    background-color: #FFD3B0;
+    padding: 0px;
+    padding-bottom: 20px;
+    margin: 0px;
+
+}
+
+.profile img {
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.hello {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.intropro {
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+}
+
+.education {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 310px 310px;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.education .edu {
+    border: 2px solid #FF6969;
+    background-color: #FFF9DE;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.edu-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF6969;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 2;
+}
+
+
+.edu:hover {
+    background-color: #FF6969;
+    color: #FFF9DE;
+}
+.skills {
+    display: flex;
+    color: #FF6969;
+    grid-column: span 2;
+    margin: 0px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects {
+    background-color: #FFD3B0;
+    padding-bottom: 40px;
+    padding-top: 50px;
+}
+
+.proj-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    color: #FF6969;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+}
+
+.proj-cont {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 370px 370px ;
+    grid-template-rows: 250px 250px ;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.prj {
+    border-radius: 10px;
+    border: 2px solid rgb(255, 10, 10);
+    height: 250px;
+    width: 370px;
+}
+
+.prj:hover {
+    scale: 1.1;
+}
+
+.contact {
+    background-color: #FFD3B0;
+}
+.Getcont {
+    padding-bottom: 2px;
+    color: #FF6969;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contact-line {
+    font-weight: 600;
+    color: #171e20;
+}
+
+.footer {
+    background-color: #A6D0DD;
+    padding-bottom: 1px;
+}
+
+.footer-grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.copyright {
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navigation-bm {
+    display: flex;
+    list-style: none;
+    margin: 0; 
+    background: #A6D0DD;        
+}
+
+.navigation-bm a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navigation-bm a:hover {
+    background-color: #4f6c75;
+    color: aliceblue;
+}
+
+
+
+
+@media (max-width: 700px) {
+    .education {
+        grid-template-columns: 300px;
+        gap: 10px;
+    }
+    .skills {
+        grid-column: span 1;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .edu-title {
+        grid-column: span 1;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .proj-cont {
+        grid-template-columns: 370px;
+    }
+    .footer-grid {
+        padding-top: 10px;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .copyright {
+        font-size: 1em;
+        margin-top: 15px;
+        order: 1;
+    }
+
+    .navigation-bm {
+        flex-flow: column wrap;
+        order: -1;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .social {
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 850px) and (min-width: 601px) {
+    .proj-cont {
+        grid-template-columns: 370px;
+    }
+    .copyright {
+        font-size: 0.6em;
+    }
+
+}
